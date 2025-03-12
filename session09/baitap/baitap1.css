@@ -1,0 +1,57 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* css toàn trang */
+.container{
+    width: 1440px;
+    background-image: linear-gradient(#333333,#090707);
+    height: 5347px;
+}
+/* css phần header */
+.header{
+    display: flex;
+    justify-content: space-around;
+    /* margin-top: 24px; */
+}
+.header .header-left{
+     margin-top: 24px;
+    width: 165px;
+    height: 36.63px;
+    /* border: 1px solid black; */
+    /* line-height: 36.63px; */
+    font-weight: 900;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.header .header-left .logo{
+    font-size: 30px;
+}
+.header .header-right{
+    padding-top: 24px;
+}
+.header .header-right .features{
+    width: 56px;
+    height: 17px;
+    border: 2px solid white;
+    display: inline-block;
+    font-size: 14px;
+    color: #ffffff;
+    margin-right: 27px;
+}
+/* css phần banner */
+.banner{
+
+}
+
+/* css phần main */
+.main{
+
+}
+/* css phân footer */
+.footer{
+
+}
