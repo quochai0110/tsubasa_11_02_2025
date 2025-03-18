@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            JS
+            chia nhóm kiểu dữ liệu
+            1. kiểu đơn giản, tham trị, nguyên thủy, primitive_type
+                number, string, null, ....
+            2. kiểu phức tạp, tham chiếu, reference type
+                + array
+                + object
+                + function
+
+        */
+       let a= 5;
+       let b=a;
+       b=15;
+       console.log("a",a);
+       console.log("b",b);
+
+       
+
+        let student={
+            name:"minh thu",
+            age:25
+        }
+        let obj1={...student};// gán địa chỉ của student cho obj1
+        /* 
+            let obj1= Object.assign({}, obj1);
+            let obj1= JSON.parse(JSON.stringify(student));
+        */
+        obj1.age=50;
+        console.log("obj1",obj1);
+        console.log("student",student);
+
+        
+    </script>
+</body>
+</html>

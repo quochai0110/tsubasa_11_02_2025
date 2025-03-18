@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /* 
+            1. tìm phần tử có trong mảng hay không
+
+        */
+       let numbers=[5,7,4,2,8,9];
+       let k=8;
+       let flag=1;
+       for (let i = 0; i < numbers.length; i++) {
+            if(numbers[i]==k){
+                flag=2;
+                break; // thoát khỏi vòng lặp
+            }
+       }
+       // đi kiểm tra flag
+       if(flag==1){
+        console.log("không có phần tử");
+       }else{
+        console.log("có phần tử");
+       }
+    </script>
+</body>
+</html>
