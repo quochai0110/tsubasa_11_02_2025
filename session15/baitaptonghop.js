@@ -46,13 +46,13 @@ while (true) {
             }
             let name= prompt("nhập tên nhân viên");
             let position=prompt("nhập vị trí");
-            let salary= +prompt("nhập lương");// ép kiểu dữ liệu về dạng Number
+            let salary1= +prompt("nhập lương");// ép kiểu dữ liệu về dạng Number
             // khởi tạo đối tượng
             let employee= {
                 employeeId: id,
                 name:name,
                 position:position,
-                salary:salary,
+                salary:salary1,
             }
             // thêm đối tượng vào mảng nhân viên
             employees.push(employee);
@@ -111,6 +111,7 @@ while (true) {
                 employees[index]=newEmployee;
             }
             break;
+         
         case 5:
             // console.log("xóa nhân viên theo id");
              let deleteId= +prompt("mời nhập id nhân viên cần xóa");
