@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 150px;
+            background-color: #dbdbdb;
+            position: relative;
+        }
+        .form{
+            width: 80%;
+            background-color: white;
+            position: absolute;
+            top: 50px;
+            right: 10px;
+        }
+        .btn{
+            position: absolute;
+            right: 5px;
+            top: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Modal example</h1>
+        <button onclick="hideForm()">open Modal</button>
+        <div class="form" style="display: none;">
+            <p>some text in the modal!</p>
+            <span onclick="closeForm()" class="btn">X</span>
+        </div>
+    </div>
+    <script>
+        function hideForm() {
+            console.log("click");
+            document.getElementsByClassName("form")[0].style.display="block";
+        }
+        function closeForm() {
+            document.getElementsByClassName("form")[0].style.display="none";
+        }
+    </script>
+</body>
+</html>

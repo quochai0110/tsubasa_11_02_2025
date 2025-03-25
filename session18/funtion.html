@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 
+            Các loại hàm thường dùng
+            1. function declaration (hàm bình thường)
+                function tên_hàm (){
+                    // logic code 
+                }
+            2. expression function
+               let result=function(){
+                // logic viết hàm
+               }
+            3. arrow function (hàm mũi tên)
+               let result= ()=>{
+                // logic bên trong hàm
+               }
+        */
+       // khai báo hàm tính tổng 2 số
+       function sum(){
+         let a=5;
+         let b=7;
+         console.log("giá trị của a + b là: ", a+b);
+       }
+       // muốn hàm thực thi bắt buộc phải gọi hàm
+       sum();
+       let result= function () {
+        let str1="hello";
+        let str2="js";
+        console.log(`${str1} ${str2}`);
+        console.log(str1+str2);
+       }
+       result();
+
+       let sayHello=()=>{
+            console.log("hàm arrow function");
+       }
+       sayHello();
+    </script>
+</body>
+</html>

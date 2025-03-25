@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        tr,
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>bài tập 6!</h1>
+    <table border="1">
+
+        <tbody>
+            <tr>
+                <td colspan="4"><input id="result" type="text"></td>
+            </tr>
+            <tr>
+                <td onclick="chooseValue(this)">+</td>
+                <td onclick="chooseValue(this)">-</td>
+                <td onclick="chooseValue(this)">x</td>
+                <td onclick="chooseValue(this)">:</td>
+            </tr>
+            <tr>
+                <td onclick="chooseValue(this)">7</td>
+                <td onclick="chooseValue(this)">8</td>
+                <td onclick="chooseValue(this)">9</td>
+                <td onclick="chooseValue(this)" rowspan="4">=</td>
+            </tr>
+            <tr>
+                <td onclick="chooseValue(this)">4</td>
+                <td onclick="chooseValue(this)">5</td>
+                <td onclick="chooseValue(this)">6</td>
+
+            </tr>
+            <tr>
+                <td onclick="chooseValue(this)">1</td>
+                <td onclick="chooseValue(this)">2</td>
+                <td onclick="chooseValue(this)">3</td>
+            </tr>
+            <tr>
+                <td onclick="chooseValue(this)">0</td>
+                <td onclick="chooseValue(this)">.</td>
+                <td onclick="chooseValue(this)">C</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script>
+        let str = "";
+
+        function chooseValue(item) {
+            // console.log("item", item.innerHTML);
+            str += item.innerHTML;
+            if(item.innerHTML=="="){
+                console.log("tính toán hiển thị kết quả");
+            }else{
+                console.log("1111",str.split(""));
+                
+                showInputValue(str);
+            }
+        }
+        // CẬP NHẬT LẠI VALUE
+        function showInputValue(param) {
+            document.getElementById("result").value = param;
+        }
+    </script>
+</body>
+
+</html>

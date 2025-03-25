@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click">click1!</button>
+    <!-- <button onclick="sayHello()">click</button> -->
+    <script>
+        let element= document.getElementById("click");
+        // element.onclick=function(){
+        //     alert("say hello!");
+        // }
+        element.addEventListener("click",()=>{
+            alert("thêm sự kiện cho nút button!");
+        })
+
+        // tương tác bàn phím
+        document.addEventListener("keydown",(event)=>{
+            console.log("event",event);
+            switch (event.keyCode) {
+                case 13:
+                    console.log("nhấn nút enter");
+                    
+                    break;
+                case 39:
+                    console.log("nhân vật sang phải");
+                    
+                    break;
+                default:
+                    break;
+            }
+            
+        })
+    </script>
+</body>
+</html>

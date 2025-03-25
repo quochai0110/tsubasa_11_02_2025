@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><!-- đối tượng hay element -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading title"> học lập trình dom !</h1>
+    <a href="" target=""></a>
+    <p id="dom">học dom js</p>
+    <h2 id="attribute">thuộc tính_ attribute trong DOM</h2>
+    <!-- <h2 style="color: red;">thuộc tính_ attribute trong DOM</h2> -->
+    
+
+    <!-- <p>code javascript</p> -->
+    <script>
+        let numbers=[4,5];
+        numbers[1];
+        /* 
+            DOM: document object model
+            mô hình tài liệu dạng đối tượng
+            ĐỐI TƯỢNG(OBJECT);
+            DOM gồm 3 thành phần
+            1. element( đối tượng)
+            2. attribute( thuộc tính)
+            3. text ( nội dung )
+        */
+        // lấy đối tượng ra
+        //    let element= document.getElementById("dom");
+        //    console.log("element",element);
+        // element.innerHTML="<h2>Minh Tú</h2>";
+        // khai báo đối tượng sinh viên
+        let student = {
+            age: 20,
+            name: "minh thu",
+        }
+        student.name = "Hồng Vân";
+        student.address="hà nội";
+        // console.log(student);
+        // let element= document.getElementsByTagName("h2")[0];
+        let element= document.getElementById("attribute");
+        element.style.color="green";
+
+    </script>
+</body>
+
+</html>
