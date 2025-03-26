@@ -24,7 +24,7 @@
             <tr>
                 <td onclick="chooseValue(this)">+</td>
                 <td onclick="chooseValue(this)">-</td>
-                <td onclick="chooseValue(this)">x</td>
+                <td onclick="chooseValue(this)">*</td>
                 <td onclick="chooseValue(this)">:</td>
             </tr>
             <tr>
@@ -54,22 +54,39 @@
     </table>
     <script>
         let str = "";
-
+        let calculator=0;
+       
+        
         function chooseValue(item) {
             // console.log("item", item.innerHTML);
-            str += item.innerHTML;
+           
+            let itemValue=item.innerHTML;
+            str += itemValue;
             if(item.innerHTML=="="){
-                console.log("tính toán hiển thị kết quả");
-            }else{
-                console.log("1111",str.split(""));
+                console.log(1111,str.slice(0,str.length-1));
                 
-                showInputValue(str);
+                calculator= eval(str.slice(0,str.length-1));
+                console.log(calculator);
+                
+                
+                showInputValue(calculator);
+            }else{
+                showInputValue(str.slice(0));
             }
+            if(item.innerHTML=="C"){
+                str="";
+                showInputValue("");
+
+            }
+            
+           
         }
         // CẬP NHẬT LẠI VALUE
         function showInputValue(param) {
             document.getElementById("result").value = param;
         }
+       
+        
     </script>
 </body>
 
